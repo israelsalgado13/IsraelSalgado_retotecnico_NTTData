@@ -5,49 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador de lista</title>
     <style>
-      // estilo al body
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: black;
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f5f5f5;
+            background-color: white;
         }
-        //estilo al primer encabezado
+        
         h1 {
             text-align: center;
-            color: #2c3e50;
+            color: black;
             margin-bottom: 30px;
         }
-        //estilo al contenedor
+        
         .container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 20px;
         }
-        //estilo a la tarjeta
+        
         .person-card {
             background-color: white;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px;
             overflow: hidden;
-            transition: transform 0.3s ease;
-        }
+            transition: transform 0.3s;
+        }      
         
-        .person-card:hover {
-            transform: translateY(-5px);
-        }
-        //estilo al encabezado
         .person-header {
             display: flex;
             align-items: center;
             padding: 20px;
-            background-color: #3498db;
+            background-color: lightskyblue;
             color: white;
         }
-        //estilo a la foto
+        
         .person-foto {
             width: 80px;
             height: 80px;
@@ -56,7 +51,7 @@
             border: 3px solid white;
             margin-right: 20px;
         }
-        //estilo al nombre
+        
         .person-name {
             margin: 0;
             font-size: 1.4rem;
@@ -74,7 +69,7 @@
         .detail-label {
             font-weight: bold;
             min-width: 120px;
-            color: #7f8c8d;
+            color: gray;
         }
         
         .detail-value {
@@ -85,9 +80,9 @@
             text-align: center;
             margin-bottom: 30px;
         }
-        //estilo al boton
+        
         button {
-            background-color: #3498db;
+            background-color: skyblue;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -95,19 +90,15 @@
             cursor: pointer;
             font-size: 1rem;
             transition: background-color 0.3s;
-        }
+        }       
         
-        button:hover {
-            background-color: #2980b9;
-        }
-        //estilo a la carga
         .loading {
             text-align: center;
             font-size: 1.2rem;
-            color: #7f8c8d;
+            color: gray;
             margin: 50px 0;
         }
-        //designacion del color dependiendo del sexo
+        
         .gender-male {
             background-color: blue;
         }
